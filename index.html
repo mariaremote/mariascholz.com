@@ -30,6 +30,8 @@
                 <h2>Software&nbsp; Engineer & Web&nbsp;Developer</h2>
             </header>
             
+            <button type="button" id="hamburger" class="navbar-style">☰</button>
+
             <nav class="navbar">
                 <ol class="nav-wrapper">
                     <li><a href="#about">about me</a></li>
@@ -283,9 +285,43 @@
                 
                 <div class="fineprint">
                     <small class="made-by">&copy; 2023 | Maria Scholz</small>
-                    <small class="version">v1.01</small>
+                    <small class="version">v1.2.0</small>
                 </div>
             </footer>
         </div>
+
+        <script>
+
+            // Query for things up front
+                const hamburger = document.querySelector('#hamburger');
+                const nav = document.querySelector('.navbar');
+
+                // Verify that both of those are found by adding an `if` statement check that both of them are "truthy"
+                // https://developer.mozilla.org/en-US/docs/Glossary/Truthy
+                if (hamburger && nav) {
+                    hamburger.addEventListener('click', function () {
+                    if (nav.style.display === 'block') {
+                        nav.style.display = 'none';
+                    } else {
+                        nav.style.display = 'block';
+                    }                    });
+                } else {
+                    // Dump an informative error to the console and handle things gracefully instead of crashing.
+                    if (!hamburger) console.error('#hamburger element not found!');
+                    if (!navbar) console.error('.navbar element not found!');
+                }
+
+
+            // document.querySelector('#hamburger').addEventListener('click', function () {
+            //         const nav = document.querySelector('.navbar');
+            //         if (nav.style.display === 'block') {
+            //             nav.style.display = 'none';
+            //         } else {
+            //             nav.style.display = 'block';
+            //         }
+            //     });
+
+        </script>
+
     </body>
 </html>

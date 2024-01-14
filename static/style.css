@@ -103,10 +103,13 @@ header h2 {
 }
 /* --------------- Nav --------------- */
 
-.navbar {
+.navbar, .navbar-style {
     background-color: #b5ba72ff;
     padding: 1% 0;
     margin: 3% 0;
+}
+.navbar {
+    display: block;
 }
 .nav-wrapper {
     display: flex;
@@ -124,13 +127,42 @@ header h2 {
     border-top: 2px solid #262119ff;
     border-bottom: 2px solid #262119ff;
 }
+#hamburger {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
-    nav ol {
+    #hamburger {
+        display:inline-block;
+        position: fixed;
+        top: 0px;
+        right: 2%;
+        z-index: 2;
+        padding: 4%;
+        border: solid 1px #53462bff;
+        border-radius: 30%;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #53462bff;
+    }
+    /* clicking .hamburger menu changes this to block */
+    #hamburger:hover { display: none;
+        cursor: pointer;
+    }
+    .navbar {
+        display: none;
+        position: fixed;
+        top: 0px;
+        right: 10%;
+        z-index: 1;
+        border-radius: 12%;
+    }
+    .nav-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    nav li {
+    .nav-wrapper li {
         margin: 6px 0;
     }
 }
@@ -159,6 +191,9 @@ header h2 {
     display:none;
 }
 @media only screen and (max-width: 470px){
+    .intro {
+        text-align: center;
+    }
     #profile-pic {
         display: block;
         float: none;
