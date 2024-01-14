@@ -145,7 +145,8 @@ header h2 {
         font-weight: 800;
         color: #53462bff;
     }
-    #hamburger:hover {
+    /* clicking .hamburger menu changes this to block */
+    #hamburger:hover { display: none;
         cursor: pointer;
     }
     .navbar {
