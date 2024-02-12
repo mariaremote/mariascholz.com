@@ -1,210 +1,242 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-    <head>
-        <!-- meta tags -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Maria Scholz">
-        <meta name="description" content="Maria Scholz is a Software Engineer and Web Developer. This Portfolio page showcases her skills, projects and experience.">
-        <meta name="keywords" content="Maria Scholz, Web Development, Software Engineering, Full Stack, Web Developer, Front End Developer">
-        <!-- TITLE -->
-        <title>Maria Scholz | Web Developer</title>
-        <!-- icons --> <!-- Font Favicon: Medula One -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/light/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/light/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/light/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <!-- FONTS-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200;400;500;600;700&family=Croissant+One&family=Give+You+Glory&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <!-- CSS -->
-        <link rel="stylesheet" href="static/style.css" type="text/css">
-    </head>
-    <body>
-        <div class="content-wrapper">                
-            <header>
-                <h1><a href="https://maria-scholz.com" title="mariascholz.com"><span>Maria</span> Scholz</a></h1>
-                <h2>Software&nbsp; Engineer & Web&nbsp;Developer</h2>
-            </header>
-            
-            <button type="button" id="hamburger" class="navbar-style">☰</button>
 
-            <nav class="navbar">
-                <ol class="nav-wrapper" role="presentation">
-                    <li><a href="#about">about me</a></li>
-                    <li><a href="#projects">my projects</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#experience">work experience</a></li>
-                    <li><a href="#education">education</a></li>
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maria Scholz">
+    <meta name="description"
+        content="Maria Scholz is a Software Engineer and Web Developer. This Portfolio page showcases her skills, projects and experience.">
+    <meta name="keywords"
+        content="Maria Scholz, Web Development, Software Engineering, Full Stack, Web Developer, Front End Developer">
+    <!-- TITLE -->
+    <title>Maria Scholz | Web Developer</title>
+    <!-- icons --> <!-- Font Favicon: Medula One -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/light/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/light/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/light/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200;400;500;600;700&family=Croissant+One&family=Give+You+Glory&family=Quicksand:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/style.css" type="text/css">
+    <script src="script.js" async defer></script>
+
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header>
+            <h1><a href="https://maria-scholz.com" title="mariascholz.com"><span>Maria</span> Scholz</a></h1>
+            <h2>Software&nbsp; Engineer & Web&nbsp;Developer</h2>
+        </header>
+
+        <button type="button" id="hamburger" class="navbar-style">☰</button>
+
+        <nav class="navbar">
+            <ol class="nav-wrapper" role="presentation">
+                <li><a href="#about">about me</a></li>
+                <li><a href="#projects">my projects</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#experience">work experience</a></li>
+                <li><a href="#education">education</a></li>
+            </ol>
+        </nav>
+
+        <main>
+            <section id="about">
+                <div class="intro">
+                    <img id="profile-pic" src="static/images/profile_photo.JPG"
+                        alt="maria in a white shirt looking at the camera" height="200px">
+                    <p>After an extensive background in <b>Customer Service</b> and <b>Project Management</b> I decided
+                        to take the leap and transition my career into the realms of Software & Web Development. I now
+                        work as a <b>Software Engineer</b> for in-house Automation Solutions and Process Optimizations
+                        for an international semiconductor supplier company. However, my passion is <b>Web
+                            Development</b> and I am open for new opportunities while I keep growing my skill set.</p>
+                    <p>I am self-taught with a strong desire to try new projects, embrace problems and find innovative
+                        ways to solve them. My work ethics are grounded in a belief that <b>'everything is
+                            figure-out-able'</b>. I learn fast, apply knowledge practically and understand the power of
+                        collaboration.</p>
+                    <p>My second passion in life is <b>Surfing</b>, which is the perfect balance for me (along with Yoga
+                        and Meditation) after spending hours in front of the computer. Check out my surf blog at <a
+                            href="https://surfineer.com" target="_blank">Surfineer.com</a>!</p>
+                </div>
+                <aside id="my-stack" class="hidden">My Stack: Python HTML CSS Flask</aside>
+            </section>
+
+            <section id="projects">
+                <h3>Projects</h3>
+                <ul class="project-grid" role="presentation">
+
+                    <li>
+                        <a href="#">
+                            <h4 class="project-title">My Portfolio Site</h4>
+                        </a>
+                        <p>This is my personal website, showcasing my experience and projects with web dev tools. Check
+                            out my <a href="design.html" target="_blank">style system</a> for this page!</p>
+                        <small>Hosted on <span>Github</span></small>
+                    </li>
+
+                    <li>
+                        <a href="https://surfineer.github.io/rajasurfschool/" target="_blank">
+                            <h4 class="project-title">Raja Surf School</h4>
+                        </a>
+                        <p>Multi-page website built for a friend's surf school in Sri Lanka.</p>
+                        <small>Hosted on <span>Github</span></small>
+                    </li>
+
+                    <li>
+                        <a href="/example-sites/tea-cozy/tea-cozy.html" target="_blank">
+                            <h4 class="project-title">Tea Cozy Website</h4>
+                        </a>
+                        <p>For this exercise from a Codecademy course I built a website for a Tea Shop according to the
+                            provided <a href="/example-sites/tea-cozy/img-tea-cozy-redline.jpg">mock-up</a>.</p>
+                        <small>Hosted on <span>Github</span></small>
+                    </li>
+
+                    <li>
+                        <a href="https://surfineer.com/quote" target="_blank">
+                            <h4 class="project-title">Daily Wisdom</h4>
+                        </a>
+                        <p>Check in here for your daily dose of inspirational quote, one piece of wisdom for every day.
+                        </p>
+                        <small>Hosted on <span>GCP</span> using <span>Flask</span> and <span>Firestore</span></small>
+                    </li>
+
+                    <li>
+                        <a href="https://surfineer.com/japanese" target="_blank">
+                            <h4 class="project-title">Today in Japanese</h4>
+                        </a>
+                        <p>This page will tell you the current day of the week in Japanese!</p>
+                        <small>Hosted on <span>GCP</span> using <span>Flask</span></small>
+                    </li>
+
+                    <li>
+                        <a href="https://surfineer.com/countdown" target="_blank">
+                            <h4 class="project-title">Count Down</h4>
+                        </a>
+                        <p>Enter a date you are looking forward to and see how many days to go!</p>
+                        <small>Hosted on <span>GCP</span> using <span>Flask</span></small>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h3>Skills</h3>
+                <div class="skill-wrapper">
+                    <div class="skill-item">
+                        <h4 class="skill-category">Human Skills</h4>
+                        <ul role="presentation">
+                            <li>Strategic Problem Solving</li>
+                            <li>Critical Thinking</li>
+                            <li>Adabtability</li>
+                            <li>Priority Management</li>
+                            <li>Self-Motivation</li>
+                            <li>Curiosity</li>
+                        </ul>
+                    </div>
+                    <h4 class="hidden">Technical Skills</h4>
+                    <div class="skill-item">
+                        <h5 class="skill-category">Programming Languages</h5>
+                        <ul role="presentation">
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML/CSS</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-item">
+                        <h5 class="skill-category">Libraries & Frameworks</h5>
+                        <ul role="presentation">
+                            <li>Flask</li>
+                        </ul>
+                    </div>
+                    <div class="skill-item">
+                        <h5 class="skill-category">Tools & Platforms</h5>
+                        <ul role="presentation">
+                            <li>Google Cloud Platform</li>
+                            <li>GIT, Github, Gitlab</li>
+                            <li>Linux/Bash</li>
+                            <li>OpenProject</li>
+                            <li>Atlassian</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h3>Work Experience</h3>
+                <ol class="time-line" role="presentation">
+                    <li class="position">
+                        <h4>Toppan Photomasks</h4>
+                        <p class="job-title">Software Engineer</p>
+                        <p>since Sep 2023</p>
+                        <ul role="presentation">
+                            <li>Driving process automation and continuous improvement projects to optimize data
+                                preparation and order entry procedures.</li>
+                            <li>Finding innovative techniques to enhance workflow efficiency and adopt agile project
+                                management methodology.</li>
+                        </ul>
+                    </li>
+                    <li class="position">
+                        <h4 class="hidden">Toppan Photomasks</h4>
+                        <p class="job-title">Technical Customer Service Specialist</p>
+                        <p>Mar 2020 - Aug 2023</p>
+                        <ul role="presentation">
+                            <li>Streamlined product order entry and support, ensuring accuracy and timely execution.
+                            </li>
+                            <li>Enhanced customer service by improving communication processes and troubleshooting
+                                techniques.</li>
+                            <li>Led customer review meetings and status reporting, contributing to elevated customer
+                                satisfaction rates.</li>
+                        </ul>
+                    </li>
+                    <li class="position">
+                        <h4>Nortal (former Schuetze)</h4>
+                        <p class="job-title">IT-Project Management Assistant</p>
+                        <p>Jul 2019 - Feb 2020</p>
+                        <ul role="presentation">
+                            <li>Assisted in the establishment and optimization of project management procedures.</li>
+                            <li>Supported both strategic and operational project activities, ensuring alignment with
+                                business goals.</li>
+                        </ul>
+                    </li>
+                    <li class="position">
+                        <h4>Tokyo Electron</h4>
+                        <p class="job-title">Sales Administrative Assistant</p>
+                        <p>Mar 2018 - Feb 2013</p>
+                        <ul role="presentation">
+                            <li>Managed international orders, ensuring compliance with supply chain and delivery
+                                schedules.</li>
+                            <li>Played a key role in customs documentation and export control procedures.</li>
+                        </ul>
+                    </li>
+                    <li class="position">
+                        <h4>Google Maps</h4>
+                        <p class="job-title">Data Quality Evaluator</p>
+                        <p>Mar 2010 - Feb 2013</p>
+                        <ul role="presentation">
+                            <li>Performed data analysis and content evaluation to enhance the accuracy of Google Maps.
+                            </li>
+                            <li>Participated in global projects aimed at optimizing search results and map display
+                                functionality.</li>
+                        </ul>
+                    </li>
                 </ol>
-            </nav>
+            </section>
 
-            <main>
-                <section id="about">
-                    <div class="intro">
-                        <img id="profile-pic" src="static/images/profile_photo.JPG" alt="maria in a white shirt looking at the camera" height="200px">
-                        <p>After an extensive background in <b>Customer Service</b> and <b>Project Management</b> I decided to take the leap and transition my career into the realms of Software & Web Development. I now work as a <b>Software Engineer</b> for in-house Automation Solutions and Process Optimizations for an international semiconductor supplier company. However, my passion is <b>Web Development</b> and I am open for new opportunities while I keep growing my skill set.</p>
-                        <p>I am self-taught with a strong desire to try new projects, embrace problems and find innovative ways to solve them. My work ethics are grounded in a belief that <b>'everything is figure-out-able'</b>. I learn fast, apply knowledge practically and understand the power of collaboration.</p>
-                        <p>My second passion in life is <b>Surfing</b>, which is the perfect balance for me (along with Yoga and Meditation) after spending hours in front of the computer. Check out my surf blog at <a href="https://surfineer.com" target="_blank">Surfineer.com</a>!</p>
-                    </div>
-                    <aside id="my-stack" class="hidden">My Stack: Python HTML CSS Flask</aside>
-                </section>
+            <section id="education">
+                <h3>Education & Resources</h3>
+                <ol role="presentation">
 
-                <section id="projects">
-                    <h3>Projects</h3>
-                    <ul class="project-grid" role="presentation">
-
-                        <li>
-                            <a href="#"><h4 class="project-title">My Portfolio Site</h4></a>
-                            <p>This is my personal website, showcasing my experience and projects with web dev tools. Check out my <a href="design.html" target="_blank">style system</a> for this page!</p>
-                            <small>Hosted on <span>Github</span></small>
-                        </li>
-
-                        <li>
-                            <a href="https://surfineer.github.io/rajasurfschool/" target="_blank">
-                                <h4 class="project-title">Raja Surf School</h4>
-                            </a>
-                            <p>Multi-page website built for a friend's surf school in Sri Lanka.</p>
-                            <small>Hosted on <span>Github</span></small>
-                        </li>
-
-                        <li>
-                            <a href="/example-sites/tea-cozy/tea-cozy.html" target="_blank">
-                                <h4 class="project-title">Tea Cozy Website</h4>
-                            </a>
-                            <p>For this exercise from a Codecademy course I built a website for a Tea Shop according to the provided <a href="/example-sites/tea-cozy/img-tea-cozy-redline.jpg">mock-up</a>.</p>
-                            <small>Hosted on <span>Github</span></small>
-                        </li>
-
-                        <li>
-                            <a href="https://surfineer.com/quote" target="_blank">                          
-                                <h4 class="project-title">Daily Wisdom</h4>
-                            </a>
-                            <p>Check in here for your daily dose of inspirational quote, one piece of wisdom for every day.</p>
-                            <small>Hosted on <span>GCP</span> using <span>Flask</span> and <span>Firestore</span></small>
-                        </li>
-
-                        <li>
-                            <a href="https://surfineer.com/japanese" target="_blank">
-                                <h4 class="project-title">Today in Japanese</h4>
-                            </a>
-                            <p>This page will tell you the current day of the week in Japanese!</p>
-                            <small>Hosted on <span>GCP</span> using <span>Flask</span></small>        
-                        </li>
-
-                        <li>
-                            <a href="https://surfineer.com/countdown" target="_blank">
-                                <h4 class="project-title">Count Down</h4>
-                            </a>
-                            <p>Enter a date you are looking forward to and see how many days to go!</p>
-                            <small>Hosted on <span>GCP</span> using <span>Flask</span></small>
-                        </li>
-                    </ul>
-                </section>
-
-                <section id="skills">
-                    <h3>Skills</h3>
-                    <div class="skill-wrapper">
-                        <div class="skill-item">
-                            <h4 class="skill-category">Human Skills</h4>
-                            <ul role="presentation">
-                                <li>Strategic Problem Solving</li>
-                                <li>Critical Thinking</li>
-                                <li>Adabtability</li>
-                                <li>Priority Management</li>
-                                <li>Self-Motivation</li>
-                                <li>Curiosity</li>
-                            </ul>
-                        </div>
-                            <h4 class="hidden">Technical Skills</h4>
-                        <div class="skill-item">
-                            <h5 class="skill-category">Programming Languages</h5>
-                            <ul role="presentation">
-                                <li>Python</li>
-                                <li>JavaScript</li>
-                                <li>HTML/CSS</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div>
-                        <div class="skill-item">
-                            <h5 class="skill-category">Libraries & Frameworks</h5>
-                            <ul role="presentation">
-                                <li>Flask</li>
-                            </ul>
-                        </div>
-                        <div class="skill-item">
-                            <h5 class="skill-category">Tools & Platforms</h5>
-                            <ul role="presentation">
-                                <li>Google Cloud Platform</li>
-                                <li>GIT, Github, Gitlab</li>
-                                <li>Linux/Bash</li>
-                                <li>OpenProject</li>
-                                <li>Atlassian</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="experience">
-                    <h3>Work Experience</h3>
-                    <ol class="time-line" role="presentation">
-                        <li class="position">
-                            <h4>Toppan Photomasks</h4>
-                            <p class="job-title">Software Engineer</p>
-                            <p>since Sep 2023</p>
-                            <ul role="presentation">
-                                <li>Driving process automation and continuous improvement projects to optimize data preparation and order entry procedures.</li>
-                                <li>Finding innovative techniques to enhance workflow efficiency and adopt agile project management methodology.</li>
-                            </ul>
-                        </li>
-                        <li class="position">
-                            <h4 class="hidden">Toppan Photomasks</h4>
-                            <p class="job-title">Technical Customer Service Specialist</p>
-                            <p>Mar 2020 - Aug 2023</p>
-                            <ul role="presentation">
-                                <li>Streamlined product order entry and support, ensuring accuracy and timely execution.</li>
-                                <li>Enhanced customer service by improving communication processes and troubleshooting techniques.</li>
-                                <li>Led customer review meetings and status reporting, contributing to elevated customer satisfaction rates.</li>
-                            </ul>
-                        </li>
-                        <li class="position">
-                            <h4>Nortal (former Schuetze)</h4>
-                            <p class="job-title">IT-Project Management Assistant</p>
-                            <p>Jul 2019 - Feb 2020</p>
-                            <ul role="presentation">
-                                <li>Assisted in the establishment and optimization of project management procedures.</li>
-                                <li>Supported both strategic and operational project activities, ensuring alignment with business goals.</li>
-                            </ul>
-                        </li>
-                        <li class="position">
-                            <h4>Tokyo Electron</h4>
-                            <p class="job-title">Sales Administrative Assistant</p>
-                            <p>Mar 2018 - Feb 2013</p>
-                            <ul role="presentation">
-                                <li>Managed international orders, ensuring compliance with supply chain and delivery schedules.</li>
-                                <li>Played a key role in customs documentation and export control procedures.</li>
-                            </ul>
-                        </li>
-                        <li class="position">
-                            <h4>Google Maps</h4>
-                            <p class="job-title">Data Quality Evaluator</p>
-                            <p>Mar 2010 - Feb 2013</p>
-                            <ul role="presentation">
-                                <li>Performed data analysis and content evaluation to enhance the accuracy of Google Maps.</li>
-                                <li>Participated in global projects aimed at optimizing search results and map display functionality.</li>
-                            </ul>
-                        </li>
-                    </ol>
-                </section>
-
-                <section id="education">
-                    <h3>Education & Resources</h3>
-                    <ol role="presentation">
-
-                        <!-- <li class="education-item">
+                    <!-- <li class="education-item">
                             <details for="collapse-UoE">
                                 <summary>University of Edinburgh</summary>
                                 <p>BSc Environmental Science & Ecology</p>
@@ -212,116 +244,94 @@
                             </details>
                         </li> -->
 
-                        <li class="education-item" title="Click for more info">
-                            <input type="checkbox" id="collapse-UoE" class="hidden toggle">
-                            <label for="collapse-UoE">
-                                <h4>University of Edinburgh</h4>
-                            </label>
-                            <div class="details">
-                                <p>BSc Environmental Science & Ecology</p>
-                                <small>Sep 2013 - May 2016</small>
-                            </div>
-                        </li>
-                        
-                        <li class="education-item" title="Click for more info">
-                            <input type="checkbox" id="collapse-linkedin" class="hidden toggle">
-                            <label for="collapse-linkedin">
-                                <h4>Linkedin Learning</h4>
-                            </label>
-                            <div class="details">
-                                <p>70+ courses</p>
-                                <small>since Oct 2020</small>
-                            </div>
-                        </li>
+                    <li class="education-item" title="Click for more info">
+                        <input type="checkbox" id="collapse-UoE" class="hidden toggle">
+                        <label for="collapse-UoE">
+                            <h4>University of Edinburgh</h4>
+                        </label>
+                        <div class="details">
+                            <p>BSc Environmental Science & Ecology</p>
+                            <small>Sep 2013 - May 2016</small>
+                        </div>
+                    </li>
 
-                        <li class="education-item" title="Click for more info">
-                            <input type="checkbox" id="collapse-codecademy" class="hidden toggle">
-                            <label for="collapse-codecademy">
-                                <h4>Codecademy</h4>
-                            </label>
-                            <div class="details">
-                                <p>Full-Stack Engineer Career Path</p>
-                                <small>since Sep 2023</small>
-                            </div>
-                        </li>
+                    <li class="education-item" title="Click for more info">
+                        <input type="checkbox" id="collapse-linkedin" class="hidden toggle">
+                        <label for="collapse-linkedin">
+                            <h4>Linkedin Learning</h4>
+                        </label>
+                        <div class="details">
+                            <p>70+ courses</p>
+                            <small>since Oct 2020</small>
+                        </div>
+                    </li>
 
-                        <li class="education-item" title="Click for more info">
-                            <input type="checkbox" id="collapse-datacamp" class="hidden toggle">
-                            <label for="collapse-datacamp">
-                                <h4>Data Camp</h4>
-                            </label>
-                            <div class="details">
-                                <p>Python Programmer Track</p>
-                                <small>since Sep 2023</small>
-                            </div>
-                        </li>
+                    <li class="education-item" title="Click for more info">
+                        <input type="checkbox" id="collapse-codecademy" class="hidden toggle">
+                        <label for="collapse-codecademy">
+                            <h4>Codecademy</h4>
+                        </label>
+                        <div class="details">
+                            <p>Full-Stack Engineer Career Path</p>
+                            <small>since Sep 2023</small>
+                        </div>
+                    </li>
 
-                        <li class="education-item" title="Click for more info">
-                            <input type="checkbox" id="collapse-replit" class="hidden toggle">
-                            <label for="collapse-replit">
-                                <h4>Replit</h4>
-                            </label>
-                            <div class="details">
-                                <p>90 Days of Code (Python)</p>
-                                <small>Dec 2022 - Apr 2023</small>
-                            </div>
-                        </li>
+                    <li class="education-item" title="Click for more info">
+                        <input type="checkbox" id="collapse-datacamp" class="hidden toggle">
+                        <label for="collapse-datacamp">
+                            <h4>Data Camp</h4>
+                        </label>
+                        <div class="details">
+                            <p>Python Programmer Track</p>
+                            <small>since Sep 2023</small>
+                        </div>
+                    </li>
+
+                    <li class="education-item" title="Click for more info">
+                        <input type="checkbox" id="collapse-replit" class="hidden toggle">
+                        <label for="collapse-replit">
+                            <h4>Replit</h4>
+                        </label>
+                        <div class="details">
+                            <p>90 Days of Code (Python)</p>
+                            <small>Dec 2022 - Apr 2023</small>
+                        </div>
+                    </li>
 
 
-                    </ol>
-                </section>
-            </main>
-            
-            <footer>
-                <div id="social-media">
+                </ol>
+            </section>
+        </main>
+
+        <footer>
+            <div id="social-media">
                 <ul role="presentation">
-                    <li><a href="https://www.linkedin.com/in/maria-scholz/" target="_blank"><img src="static/svgs/icons8-linkedin_contrast.svg" alt="linkedin icon with link to linkedin profile"></a></li>
-                    <li><a href="https://github.com/mariaremote" target="_blank"><img src="static/svgs/icons8-github_contrast.svg" alt="github icon with link to github prfile"></a></li>
-                    <li><a href="https://replit.com/@surfineer" target="_blank"><img src="static/svgs/icons8-replit_contrast.svg" alt="replit icon with link to replit profile"></a></li>
-                    <li><a href="https://instagram.com/maria_remote" target="_blank"><img src="static/svgs/icons8-instagram_contrast.svg" alt="instagram icon with link to instagram profile"></a></li>
-                    <li><a href="https://twitter.com/maria_remote" target="_blank"><img src="static/svgs/icons8-twitter_contrast.svg" alt="x icon with link to x profile"></a></li>
+                    <li><a href="https://www.linkedin.com/in/maria-scholz/" target="_blank"><img
+                                src="static/svgs/icons8-linkedin_contrast.svg"
+                                alt="linkedin icon with link to linkedin profile"></a></li>
+                    <li><a href="https://github.com/mariaremote" target="_blank"><img
+                                src="static/svgs/icons8-github_contrast.svg"
+                                alt="github icon with link to github prfile"></a></li>
+                    <li><a href="https://replit.com/@surfineer" target="_blank"><img
+                                src="static/svgs/icons8-replit_contrast.svg"
+                                alt="replit icon with link to replit profile"></a></li>
+                    <li><a href="https://instagram.com/maria_remote" target="_blank"><img
+                                src="static/svgs/icons8-instagram_contrast.svg"
+                                alt="instagram icon with link to instagram profile"></a></li>
+                    <li><a href="https://twitter.com/maria_remote" target="_blank"><img
+                                src="static/svgs/icons8-twitter_contrast.svg" alt="x icon with link to x profile"></a>
+                    </li>
                 </ul>
-                </div>
-                
-                <div class="fineprint">
-                    <small class="made-by">&copy; 2023 | Maria Scholz</small>
-                    <small class="version">v1.2.1</small>
-                </div>
-            </footer>
-        </div>
+            </div>
 
-        <script>
+            <div class="fineprint">
+                <small class="made-by">&copy; 2023 | Maria Scholz</small>
+                <small class="version">v1.2.1</small>
+            </div>
+        </footer>
+    </div>
 
-            // Query for things up front
-                const hamburger = document.querySelector('#hamburger');
-                const nav = document.querySelector('.navbar');
+</body>
 
-                // Verify that both of those are found by adding an `if` statement check that both of them are "truthy"
-                // https://developer.mozilla.org/en-US/docs/Glossary/Truthy
-                if (hamburger && nav) {
-                    hamburger.addEventListener('click', function () {
-                    if (nav.style.display === 'block') {
-                        nav.style.display = 'none';
-                    } else {
-                        nav.style.display = 'block';
-                    }                    });
-                } else {
-                    // Dump an informative error to the console and handle things gracefully instead of crashing.
-                    if (!hamburger) console.error('#hamburger element not found!');
-                    if (!navbar) console.error('.navbar element not found!');
-                }
-
-
-            // document.querySelector('#hamburger').addEventListener('click', function () {
-            //         const nav = document.querySelector('.navbar');
-            //         if (nav.style.display === 'block') {
-            //             nav.style.display = 'none';
-            //         } else {
-            //             nav.style.display = 'block';
-            //         }
-            //     });
-
-        </script>
-
-    </body>
 </html>
