@@ -1,9 +1,11 @@
 const hamburger = document.getElementById('hamburger');
 const navbar = document.querySelector('.navbar');
 
-hamburger.addEventListener('click', () =>
-    navbar.style.display === 'block' ? (navbar.style.display = 'none') : (navbar.style.display = 'block')
-);
+function toggleNavbarDisplay() {
+    navbar.style.display === 'block' ? (navbar.style.display = 'none') : (navbar.style.display = 'block');
+}
+
+hamburger.addEventListener('click', toggleNavbarDisplay);
 
 // Verify that both of those are found by adding an `if` statement check that both of them are "truthy"
 // https://developer.mozilla.org/en-US/docs/Glossary/Truthy

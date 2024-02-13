@@ -172,7 +172,6 @@ header h2 {
 
     /* clicking .hamburger menu changes this to block */
     #hamburger:hover {
-        display: none;
         cursor: pointer;
     }
 
