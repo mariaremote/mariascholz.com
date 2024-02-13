@@ -4,7 +4,10 @@
   "description": "## Domains [**maria-scholz.com**](https://www.maria-scholz.com) / [**mariascholz.com**](https://www.mariascholz.com)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint '**/*.js'",
+    "format": "npx prettier --write '**/*.js'",
+    "run": "npx http-server"
   },
   "keywords": [],
   "author": "",
