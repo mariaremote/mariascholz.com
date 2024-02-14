@@ -22,6 +22,7 @@
 * {
     box-sizing: border-box;
 }
+
 body::before {
     background: url(backgrounds/dalle_staircase_3.png) no-repeat;
     background-size: cover;
@@ -32,18 +33,22 @@ body::before {
     width: 100%;
     z-index: -1;
 }
+
 body {
     margin: 0;
     font-family: 'Asap Condensed', Verdana, Tahoma, sans-serif;
     letter-spacing: 0.04rem;
 }
+
 main {
     padding: 0 2%;
     margin: 2% 0;
 }
+
 li {
     list-style: none;
 }
+
 a {
     text-decoration: none;
     font-weight: bold;
@@ -51,36 +56,45 @@ a {
     cursor: pointer;
     text-shadow: 1px 0px 3px #c57b57ff;
 }
+
 section h3 {
     padding: 2% 2%;
     border-bottom: dotted 2px gray;
 }
+
 ol {
     padding-left: 0;
 }
-.hidden { /* to keep semantic flow but not relevant for style */
+
+.hidden {
+    /* to keep semantic flow but not relevant for style */
     /* visibility: hidden; */
     display: none;
 }
+
 .content-wrapper {
     margin: 0 auto;
     background-color: hsla(49, 25%, 83%, 0.8);
     width: 80%;
     border-radius: 0.5%;
 }
+
 .flex-row {
     display: flex;
     flex-flow: row wrap;
 }
+
 .flex-column {
     display: flex;
     flex-flow: column wrap;
 }
+
 /* --------------- Header --------------- */
 
 header {
     text-align: center;
 }
+
 header h1 {
     text-transform: uppercase;
     font-family: "Croissant One", serif;
@@ -88,52 +102,92 @@ header h1 {
     padding: 2%;
     margin-bottom: -0.2em;
 }
+
 header h2 {
     font-size: 2rem;
     padding: 2%;
     margin: 2% 0;
 }
+
 @media only screen and (max-width: 600px) {
-    header h1{
-    font-size: 2.3rem;
+    header h1 {
+        font-size: 2.3rem;
     }
-    header h2{
+
+    header h2 {
         font-size: 1.23rem;
     }
 }
+
+#techstack {
+    text-align: left;
+    color: #dfdbcaff;
+    background-color: hsla(41, 32%, 25%, 0.5);
+    padding: 1.2%;
+}
+
+#typewriter::before {
+    content: ">";
+}
+
+#typewriter {
+    width: fit-content;
+    margin: 0 5%;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: .25em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2.5px solid #dfdbcaff;
+    animation: blink 0.95s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 /* --------------- Nav --------------- */
 
-.navbar, .navbar-style {
+.navbar,
+.navbar-style {
     background-color: #b5ba72ff;
     padding: 1% 0;
     margin: 3% 0;
 }
+
 .navbar {
     display: block;
 }
+
 .nav-wrapper {
     display: flex;
     justify-content: space-around;
     padding: 6px 12px;
     margin: 0;
 }
+
 .nav-wrapper a {
     box-sizing: border-box;
     color: #262119ff;
     padding: 4px;
     text-transform: uppercase;
 }
+
 .nav-wrapper a:hover {
     border-top: 2px solid #262119ff;
     border-bottom: 2px solid #262119ff;
 }
+
 #hamburger {
     display: none;
 }
 
 @media only screen and (max-width: 600px) {
     #hamburger {
-        display:inline-block;
+        display: inline-block;
         position: fixed;
         top: 0px;
         right: 2%;
@@ -145,10 +199,13 @@ header h2 {
         font-weight: 800;
         color: #53462bff;
     }
+
     /* clicking .hamburger menu changes this to block */
-    #hamburger:hover { display: none;
+    #hamburger:hover {
+        display: none;
         cursor: pointer;
     }
+
     .navbar {
         display: none;
         position: fixed;
@@ -157,11 +214,13 @@ header h2 {
         z-index: 1;
         border-radius: 12%;
     }
+
     .nav-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .nav-wrapper li {
         margin: 6px 0;
     }
@@ -176,7 +235,9 @@ header h2 {
     margin: 3% 3%;
     padding: 0;
     line-height: 1.35rem;
-} /*
+}
+
+/*
 .floats p:first-child {
     margin: 0;
 } */
@@ -187,17 +248,21 @@ header h2 {
     margin: 5px;
     margin-right: 7%;
 }
-#my-stack {                                              /* TODO: JS animation needs to be applied here! */
-    display:none;
+
+#my-stack {
+    /* TODO: JS animation needs to be applied here! */
+    display: none;
 }
-@media only screen and (max-width: 470px){
+
+@media only screen and (max-width: 470px) {
     .intro {
         text-align: center;
     }
+
     #profile-pic {
         display: block;
         float: none;
-        margin: 0 auto;    
+        margin: 0 auto;
     }
 }
 
@@ -212,6 +277,7 @@ header h2 {
     align-content: flex-start;
     align-items: stretch;
 }
+
 .project-grid li {
     background-color: hsla(64, 34%, 59%, 0.6);
     border: 1px solid hsla(41, 32%, 25%, 0);
@@ -223,12 +289,15 @@ header h2 {
     flex-basis: 200px;
     position: relative;
 }
+
 .project-grid p {
     margin: 1.5%;
 }
+
 .project-grid a {
     font-weight: 400;
 }
+
 /* .project-grid li:hover {
     position: relative;
     bottom: 4px;
@@ -244,15 +313,19 @@ header h2 {
     bottom: 0;
     margin: 3% 0;
 }
+
 .project-grid span {
     background-color: hsla(0, 0%, 50%, 0.3);
     border-radius: 4px;
     padding: 1%;
 }
-.project-grid small, .project-grid p {
+
+.project-grid small,
+.project-grid p {
     text-align: left;
     padding: 2%;
 }
+
 .project-title {
     font-family: "Give You Glory";
     font-size: 1.1rem;
@@ -261,6 +334,7 @@ header h2 {
     margin: 0;
     padding: 8% 0;
 }
+
 /* --------------- Section: Skills --------------- */
 
 .skill-wrapper {
@@ -268,6 +342,7 @@ header h2 {
     grid-template-columns: repeat(4, 1fr);
     gap: 3%;
 }
+
 .skill-item {
     padding: 4%;
     margin: 3%;
@@ -275,6 +350,7 @@ header h2 {
     border: 2px solid #53462BFF;
     border-radius: 8%;
 }
+
 /* .skill-item:hover {
     background-color: hsla(20, 49%, 56%, 0.8);
     color: hsla(49, 25%, 83%, 1);
@@ -284,15 +360,18 @@ header h2 {
     font-size: 0.9rem;
     margin-left: 6%;
 }
+
 .skill-item ul {
     margin: 0;
     padding: 2% 0;
 }
+
 .skill-item li {
     margin-left: 13%;
     list-style: circle;
     line-height: 2em;
 }
+
 @media screen and (max-width: 840px) {
     .skill-wrapper {
         display: grid;
@@ -315,6 +394,7 @@ header h2 {
     font-size: 1.3em;
     text-shadow: 1px 2px 2px #c57b57ff;
 }
+
 .time-line::before {
     content: "";
     height: 100%;
@@ -323,19 +403,23 @@ header h2 {
     left: 4%;
     background-image: linear-gradient(#53462BFF, #53462B00);
 }
+
 .time-line {
     margin-top: 3%;
     padding-left: 10%;
     position: relative;
 }
+
 .position {
     padding: 12px;
     width: 100%;
     border: 1px solid hsla(41, 32%, 25%, 0);
 }
+
 .position h4 {
     margin-top: 3%;
 }
+
 /* .position:hover {
     position: relative;
     bottom: 4px;
@@ -347,6 +431,7 @@ header h2 {
 #experience ul li {
     list-style: disc;
 }
+
 /* --------------- Section: Education --------------- */
 
 .education-item {
@@ -354,29 +439,35 @@ header h2 {
     margin: 1%;
     padding: 1%;
 }
+
 .education-item h4 {
     margin: 1%;
     font-size: 1.2rem;
     cursor: pointer;
     text-shadow: 1px 0px 3px #c57b57ff;
 }
+
 .education-item:hover {
     background-color: #dfdbcaff;
     border-radius: 5px;
 }
+
 .details {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease;
 }
+
 .details p {
     margin: 1.5% 0;
     font-weight: bold;
 }
+
 .details small {
     font-size: 0.8rem;
     margin: 1% 0;
 }
+
 .toggle:checked~.details {
     max-height: 100%;
 }
@@ -387,6 +478,7 @@ footer {
     background-color: #262119ff;
     color: white;
 }
+
 #social-media ul {
     margin: 0;
     padding: 0;
@@ -394,12 +486,15 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
 }
-#social-media li{
+
+#social-media li {
     margin: 6px;
 }
+
 #social-media li:hover {
     filter: drop-shadow(1px 1px 1px white);
 }
+
 /* #design-link {
     float: right;
     position: relative;
@@ -416,7 +511,7 @@ footer {
     font-weight: 400;
 }
 */
-.fineprint{
+.fineprint {
     display: flex;
     justify-content: space-between;
     padding: 1%;
