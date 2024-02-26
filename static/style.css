@@ -119,35 +119,6 @@ header h2 {
     }
 }
 
-#techstack {
-    text-align: left;
-    color: #dfdbcaff;
-    background-color: hsla(41, 32%, 25%, 0.5);
-    padding: 1.2%;
-}
-
-#typewriter::before {
-    content: ">";
-}
-
-#typewriter {
-    width: fit-content;
-    margin: 0 5%;
-    font-family: monospace;
-    font-weight: 600;
-    font-size: 1.3rem;
-    letter-spacing: .25em;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2.5px solid #dfdbcaff;
-    animation: blink 0.95s step-end infinite;
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
 
 /* --------------- Nav --------------- */
 
@@ -249,11 +220,6 @@ header h2 {
     margin-right: 7%;
 }
 
-#my-stack {
-    /* TODO: JS animation needs to be applied here! */
-    display: none;
-}
-
 @media only screen and (max-width: 470px) {
     .intro {
         text-align: center;
@@ -266,6 +232,31 @@ header h2 {
     }
 }
 
+#techstack {
+    text-align: left;
+    color: #dfdbcaff;
+    background-color: hsla(41, 32%, 25%, 0.5);
+    padding: 1.2%;
+}
+
+#typewriter {
+    width: fit-content;
+    margin: 0 5%;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: .25em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2.5px solid #dfdbcaff;
+    animation: blink 0.95s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
 
 /* --------------- Section: Projects --------------- */
 
