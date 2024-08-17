@@ -1,4 +1,6 @@
-# My Website
+# My (old) Website
+`Update Aug 2024`
+-> not published anymore. Will have a new website at some point.
 
 ## Domains
 [**maria-scholz.com**](https://www.maria-scholz.com) / [**mariascholz.com**](https://www.mariascholz.com)
